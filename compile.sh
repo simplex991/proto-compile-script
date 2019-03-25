@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#To run the script, type bash compile.sh in console
+
 # Change file path to the file path to protoc.exe
 # Example: C:/protoc/bin/protoc
 # You need to be in the research file (models/reserch)
-path="C:/protoc/bin/protoc"
+path="PROTOC_FILE_PATH";
 
 echo "$path object_detection/protos/anchor_generator.proto --python_out=.";
 echo "$path object_detection/protos/argmax_matcher.proto --python_out=.";
@@ -26,7 +28,7 @@ echo "$path object_detection/protos/mean_stddev_box_coder.proto --python_out=.";
 echo "$path object_detection/protos/model.proto --python_out=.";
 echo "$path object_detection/protos/multiscale_anchor_generator.proto --python_out=.";
 echo "$path object_detection/protos/optimizer.proto --python_out=.";
-echo "$path object_detection/protos/pipeline.proto --python_out=.";;
+echo "$path object_detection/protos/pipeline.proto --python_out=.";
 echo "$path object_detection/protos/post_processing.proto --python_out=.";
 echo "$path object_detection/protos/preprocessor.proto --python_out=.";
 echo "$path object_detection/protos/region_similarity_calculator.proto --python_out=.";
